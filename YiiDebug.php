@@ -34,7 +34,7 @@ class YiiDebug extends CComponent
                 echo "\n";
             }
             return;
-        } else if (empty($_SERVER['SERVER_ADDR']) || empty($_SERVER['REMOTE_ADDR']) || $_SERVER['SERVER_ADDR'] !== $_SERVER['REMOTE_ADDR']) {
+        } else if (empty($_SERVER['SERVER_ADDR']) || empty($_SERVER['REMOTE_ADDR'])) {
             return;
         }
 
